@@ -86,12 +86,84 @@
             visibility: visible;
         }
 
+        .main .main-content .section input {
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            padding: 2px 6px;
+        }
+
+        .input-wrap {}
+
+        .input-wrap .input-item {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .input-wrap .input-item label {
+            display: block;
+            width: 70px;
+            text-align: right;
+            line-height: 30px;
+            margin-right: 10px;
+            color: #999;
+        }
+
+        .input-wrap .input-item label+div {
+            flex: 1;
+            display: block;
+            margin-right: 20px;
+            line-height: 30px;
+        }
+
+        .input-wrap .input-item input[type=checkbox] {
+            width: auto;
+            vertical-align: middle;
+        }
+
+        .input-wrap .input-item textarea,
+        .input-wrap .input-item select {
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            padding: 2px 6px;
+        }
+
+        .input-wrap .input-item select {
+            width: 140px;
+            height: 25px;
+        }
+
+        .input-wrap .input-item select option {
+            border: 0;
+        }
+
+        #frm_effect input[type=text],
+        #frm_effect input[type=color],
+        #frm_effect input[type=file] {
+            padding: 0;
+        }
+
+        #frm_effect input[type=range] {
+            padding: 0;
+            margin: 0;
+            height: 30px;
+        }
+
+        #frm_effect select {
+            width: 90px;
+        }
+
+        #frm_effect input[type=color] {
+            width: 40px;
+        }
+
         .txt-section textarea {
             display: block;
             width: 100%;
             padding: 6px;
             box-sizing: border-box;
-            resize: vertical;
         }
 
         .main .qrcode {
@@ -144,14 +216,145 @@
         <div class="main">
             <div class="main-content">
                 <div class="section txt-section" data-tag="txt">
-                    <textarea name="" placeholder="请输入文本" id="txt_area" cols="30" rows="20"></textarea>
+                    <textarea name="" placeholder="输入文本" id="txt_area" cols="30" rows="12"></textarea>
                 </div>
-                <div class="section tel-section" data-tag="tel">22</div>
-                <div class="section email-section" data-tag="email">33</div>
-                <div class="section card-section" data-tag="card">44</div>
-                <div class="section wifi-section" data-tag="wifi">55</div>
-                <div class="section sms-section" data-tag="sms">66</div>
-                <div class="section effect-section" data-tag="effect">77</div>
+                <div class="section tel-section" data-tag="tel">
+                    <input type="tel" id="txt_tel" placeholder="输入电话">
+                </div>
+                <div class="section email-section" data-tag="email">
+                    <input type="email" id="txt_email" placeholder="输入邮箱">
+                </div>
+                <div class="section card-section" data-tag="card">
+                    <form action="" id="frm_card" class="input-wrap" name="MECARD">
+                        <div class="input-item"><label for="">姓名</label>
+                            <div><input name="N" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">地址</label>
+                            <div><input name="ADR" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">电话</label>
+                            <div><input name="TEL" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">邮箱</label>
+                            <div><input name="EMAIL" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">网址</label>
+                            <div><input name="URL" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">QQ</label>
+                            <div><input name="QQ" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">职位</label>
+                            <div><input name="TIL" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">单位</label>
+                            <div><input name="ORG" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">备注</label>
+                            <div><textarea name="NOTE" cols="30" rows="2"></textarea></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="section wifi-section" data-tag="wifi">
+                    <form action="" id="frm_wifi" class="input-wrap" name="WIFI">
+                        <div class="input-item"><label for="">SSID</label>
+                            <div><input name="S" type="text"></div>
+                        </div>
+                        <div class="input-item">
+                            <label for="">加密方式</label>
+                            <div><select name="T" id="sel">
+                                <option value="nopass">无加密</option>
+                                <option value="WEP">WEP</option>
+                                <option value="WPA">WPA/WPA2</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="input-item"><label for="">密码</label>
+                            <div><input name="P" type="password" disabled="disabled"></div>
+                        </div>
+                        <div class="input-item"><label for="">是否隐藏</label>
+                            <div><input name="H" type="checkbox"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="section sms-section" data-tag="sms">
+                    <form action="" id="frm_sms" class="input-wrap" name="SMS">
+                        <div class="input-item"><label for="">手机号码</label>
+                            <div><input name="Tel" type="text"></div>
+                        </div>
+                        <div class="input-item"><label for="">短信内容</label>
+                            <div><textarea name="NOTE" cols="30" rows="2"></textarea></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="section effect-section" data-tag="effect">
+                    <form action="" id="frm_effect" class="input-wrap" name="EFFECT">
+                        <div class="input-item"><label for="">点样式</label>
+                            <div>
+                                <input type="range" min="-50" max="50" step="1">
+                            </div>
+                        </div>
+                        <div class="input-item"><label for="">颜色</label>
+                            <div>
+                                <span>前景色</span>&nbsp;<input name="FgColor" type="color">
+                                <span>背景色</span>&nbsp;<input name="BgColor" value="#ffffff" type="color">
+                            </div>
+                        </div>
+                        <div class="input-item"><label for="">定位点色</label>
+                            <div>
+                                <span>外框定位点</span>&nbsp;<input name="PtColor" type="color">
+                                <span>内点定位点</span>&nbsp;<input name="InPtColor" type="color">
+                            </div>
+                        </div>
+                        <div class="input-item"><label for="">渐变</label>
+                            <div>
+                                <span>渐变色</span>&nbsp;<input name="GcColor" type="color">
+                                <span>渐变方式</span>&nbsp;<select name="GcType" id="gc_type">
+                                    <option value="0" selected>无</option>
+                                    <option value="backslash">反斜线</option>
+                                    <option value="slash">斜线</option>
+                                    <option value="circular">圆形</option>
+                                    <option value="horizontal">水平</option>
+                                    <option value="vertical">垂直</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-item"><label for="">嵌入图标</label>
+                            <div>
+                                <input type="file" accept="image/*" /><br/>
+                                <span>嵌入方式</span>&nbsp;<select name="IconType" id="icon_type">
+                                    <option value="0" selected>无</option>
+                                    <option value="backslash">反斜线</option>
+                                    <option value="slash">斜线</option>
+                                    <option value="circular">圆形</option>
+                                    <option value="horizontal">水平</option>
+                                    <option value="vertical">垂直</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-item"><label for="">外边距</label>
+                            <div>
+                                <input type="number" min="0" max="50" step="1">
+                            </div>
+                        </div>
+                        <div class="input-item"><label for="">其它设置</label>
+                            <div>
+                                <span>纠错等级</span>&nbsp;<select name="GcType" id="gc_type">
+                                    <option value="L" selected>最低</option>
+                                    <option value="M">低</option>
+                                    <option value="Q">中</option>
+                                    <option value="H">高</option>
+                                </select>
+                                <span>旋转</span>&nbsp;<select name="GcType" id="gc_type">
+                                    <option value="0">0</option>
+                                    <option value="1">90°</option>
+                                    <option value="2">180°</option>
+                                    <option value="3">270°</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="qrcode">
                 <canvas id="canvas"></canvas>

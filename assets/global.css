@@ -1,7 +1,19 @@
 input,
-textarea {
+textarea,
+select {
     outline: 0;
     font-family: "Segoe UI", Arial, "Microsoft Yahei", sans-serif;
+}
+
+::-webkit-color-swatch {
+    width: 100%;
+}
+
+input[type=range]::-webkit-slider-thumb {
+}
+
+textarea {
+    resize: vertical;
 }
 
 
