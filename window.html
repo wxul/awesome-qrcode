@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/global.css">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .body {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav {
+            line-height: 28px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            background-color: #efefef;
+        }
+
+        .nav .a {
+            text-align: center;
+            padding: 1px 6px;
+            font-size: 14px;
+            cursor: pointer;
+            color: #ff6200;
+        }
+
+        .nav .a:hover {
+            background-color: #ddd;
+            color: #ff7e00;
+        }
+
+        .nav .a.active {
+            background-color: #cdcdcd;
+            color: #ff7e00;
+        }
+
+        .nav .a.effect {
+            color: #ff4400;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+        }
+
+        .main .main-content {
+            width: 380px;
+            height: 100%;
+            box-sizing: border-box;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main .main-content .section {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            transition: all .3s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .main .main-content .section.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .txt-section textarea {
+            display: block;
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+
+        .main .qrcode {
+            flex: 1;
+            margin-left: 10px;
+            max-width: 500px;
+        }
+
+        .main .qrcode canvas {
+            display: block;
+            max-width: 100%;
+            box-shadow: 0 0 4px #ccc;
+        }
+
+        .main .qrcode .btn {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .main .qrcode .btn:hover {
+            box-shadow: 0 0 4px #ccc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 4px 9px;
+            color: #fff;
+            background-color: #ff6200;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ff7e00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body" id="body">
+        <nav class="nav" id="nav">
+            <div class="a" id="txt">文本</div>
+            <div class="a" id="tel">电话</div>
+            <div class="a" id="email">邮箱</div>
+            <div class="a" id="card">名片</div>
+            <div class="a" id="wifi">WIFI</div>
+            <div class="a" id="sms">短信</div>
+            <div class="a effect" id="effect">效果设置</div>
+        </nav>
+        <div class="main">
+            <div class="main-content">
+                <div class="section txt-section" data-tag="txt">
+                    <textarea name="" placeholder="请输入文本" id="txt_area" cols="30" rows="20"></textarea>
+                </div>
+                <div class="section tel-section" data-tag="tel">22</div>
+                <div class="section email-section" data-tag="email">33</div>
+                <div class="section card-section" data-tag="card">44</div>
+                <div class="section wifi-section" data-tag="wifi">55</div>
+                <div class="section sms-section" data-tag="sms">66</div>
+                <div class="section effect-section" data-tag="effect">77</div>
+            </div>
+            <div class="qrcode">
+                <canvas id="canvas"></canvas>
+                <div class="btn" id="generator">生成</div>
+                <!-- <div class="btn" id="clear">清除</div> -->
+                <div class="btn" id="save">保存</div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/utils/qrcode.js"></script>
+    <script src="scripts/utils/qrcanvas.js"></script>
+    <script src="scripts/utils/index.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>

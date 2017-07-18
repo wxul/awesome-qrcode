@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "QRcode-Generator",
+    "description": "二维码生成器",
+    "version": "0.1",
+    "app": {
+        "background": {
+            "scripts": [
+                "background.js"
+            ]
+        }
+    },
+    "icons": {
+        "16": "icon/icon-16.png",
+        "128": "icon/icon-128.png"
+    }
+}

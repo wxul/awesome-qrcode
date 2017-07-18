@@ -1,0 +1,13 @@
+{
+  "name": "awesome-qrcode-tool",
+  "version": "1.0.0",
+  "description": "二维码工具",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "二维码"
+  ],
+  "author": "Albert",
+  "license": "Apache-2.0"
+}
