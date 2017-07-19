@@ -5,252 +5,59 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="assets/global.css">
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-
-        .body {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .nav {
-            line-height: 28px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            width: 100%;
-            background-color: #efefef;
-        }
-
-        .nav .a {
-            text-align: center;
-            padding: 1px 6px;
-            font-size: 14px;
-            cursor: pointer;
-            color: #ff6200;
-        }
-
-        .nav .a:hover {
-            background-color: #ddd;
-            color: #ff7e00;
-        }
-
-        .nav .a.active {
-            background-color: #cdcdcd;
-            color: #ff7e00;
-        }
-
-        .nav .a.effect {
-            color: #ff4400;
-        }
-
-        .main {
-            flex: 1;
-            display: flex;
-            flex-direction: row;
-            padding: 10px;
-        }
-
-        .main .main-content {
-            width: 380px;
-            height: 100%;
-            box-sizing: border-box;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .main .main-content .section {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow-y: auto;
-            transition: all .3s;
-            opacity: 0;
-            visibility: hidden;
-        }
-
-        .main .main-content .section.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .main .main-content .section input {
-            width: 100%;
-            box-sizing: border-box;
-            display: inline-block;
-            padding: 2px 6px;
-        }
-
-        .input-wrap {}
-
-        .input-wrap .input-item {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 10px;
-        }
-
-        .input-wrap .input-item label {
-            display: block;
-            width: 70px;
-            text-align: right;
-            line-height: 30px;
-            margin-right: 10px;
-            color: #999;
-        }
-
-        .input-wrap .input-item label+div {
-            flex: 1;
-            display: block;
-            margin-right: 20px;
-            line-height: 30px;
-        }
-
-        .input-wrap .input-item input[type=checkbox] {
-            width: auto;
-            vertical-align: middle;
-        }
-
-        .input-wrap .input-item textarea,
-        .input-wrap .input-item select {
-            width: 100%;
-            box-sizing: border-box;
-            display: inline-block;
-            padding: 2px 6px;
-        }
-
-        .input-wrap .input-item select {
-            width: 140px;
-            height: 25px;
-        }
-
-        .input-wrap .input-item select option {
-            border: 0;
-        }
-
-        #frm_effect input[type=text],
-        #frm_effect input[type=color],
-        #frm_effect input[type=file] {
-            padding: 0;
-        }
-
-        #frm_effect input[type=range] {
-            padding: 0;
-            margin: 0;
-            height: 30px;
-        }
-
-        #frm_effect select {
-            width: 90px;
-        }
-
-        #frm_effect input[type=color] {
-            width: 40px;
-        }
-
-        .txt-section textarea {
-            display: block;
-            width: 100%;
-            padding: 6px;
-            box-sizing: border-box;
-        }
-
-        .main .qrcode {
-            flex: 1;
-            margin-left: 10px;
-            max-width: 500px;
-        }
-
-        .main .qrcode canvas {
-            display: block;
-            max-width: 100%;
-            box-shadow: 0 0 4px #ccc;
-        }
-
-        .main .qrcode .btn {
-            margin-top: 10px;
-            margin-right: 10px;
-        }
-
-        .main .qrcode .btn:hover {
-            box-shadow: 0 0 4px #ccc;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 4px 9px;
-            color: #fff;
-            background-color: #ff6200;
-            border-radius: 2px;
-            cursor: pointer;
-        }
-
-        .btn:hover {
-            background-color: #ff7e00;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
     <div class="body" id="body">
         <nav class="nav" id="nav">
-            <div class="a" id="txt">文本</div>
-            <div class="a" id="tel">电话</div>
-            <div class="a" id="email">邮箱</div>
-            <div class="a" id="card">名片</div>
-            <div class="a" id="wifi">WIFI</div>
-            <div class="a" id="sms">短信</div>
-            <div class="a effect" id="effect">效果设置</div>
+            <div class="a" id="txt"><i class="fa fa-file-text-o fa-fw"></i> __MSG_menu_txt__</div>
+            <div class="a" id="tel"><i class="fa fa-phone fa-fw"></i> __MSG_menu_tel__</div>
+            <div class="a" id="email"><i class="fa fa-envelope-o fa-fw"></i> __MSG_menu_email__</div>
+            <div class="a" id="card"><i class="fa fa-id-card-o fa-fw"></i> __MSG_menu_card__</div>
+            <div class="a" id="wifi"><i class="fa fa-wifi fa-fw"></i> __MSG_menu_wifi__</div>
+            <div class="a" id="sms"><i class="fa fa-commenting-o fa-fw"></i> __MSG_menu_sms__</div>
+            <div class="a effect" id="effect"><i class="fa fa-snowflake-o fa-fw"></i> __MSG_menu_effect__</div>
         </nav>
         <div class="main">
             <div class="main-content">
                 <div class="section txt-section" data-tag="txt">
-                    <textarea name="" placeholder="输入文本" id="txt_area" cols="30" rows="12"></textarea>
+                    <textarea name="" placeholder="__MSG_p_txt__" id="txt_area" cols="30" rows="12"></textarea>
                 </div>
                 <div class="section tel-section" data-tag="tel">
-                    <input type="tel" id="txt_tel" placeholder="输入电话">
+                    <input type="tel" id="txt_tel" placeholder="__MSG_p_tel__">
                 </div>
                 <div class="section email-section" data-tag="email">
-                    <input type="email" id="txt_email" placeholder="输入邮箱">
+                    <input type="email" id="txt_email" placeholder="__MSG_p_email__">
                 </div>
                 <div class="section card-section" data-tag="card">
                     <form action="" id="frm_card" class="input-wrap" name="MECARD">
-                        <div class="input-item"><label for="">姓名</label>
+                        <div class="input-item"><label for="">__MSG_c_N__</label>
                             <div><input name="N" type="text"></div>
                         </div>
-                        <div class="input-item"><label for="">地址</label>
+                        <div class="input-item"><label for="">__MSG_c_ADR__</label>
                             <div><input name="ADR" type="text"></div>
                         </div>
-                        <div class="input-item"><label for="">电话</label>
+                        <div class="input-item"><label for="">__MSG_c_TEL__</label>
                             <div><input name="TEL" type="text"></div>
                         </div>
-                        <div class="input-item"><label for="">邮箱</label>
+                        <div class="input-item"><label for="">__MSG_c_EMAIL__</label>
                             <div><input name="EMAIL" type="text"></div>
                         </div>
-                        <div class="input-item"><label for="">网址</label>
+                        <div class="input-item"><label for="">__MSG_c_URL__</label>
                             <div><input name="URL" type="text"></div>
                         </div>
                         <div class="input-item"><label for="">QQ</label>
                             <div><input name="QQ" type="text"></div>
                         </div>
-                        <div class="input-item"><label for="">职位</label>
+                        <!-- <div class="input-item"><label for="">职位</label>
                             <div><input name="TIL" type="text"></div>
-                        </div>
-                        <div class="input-item"><label for="">单位</label>
+                        </div> -->
+                        <div class="input-item"><label for="">__MSG_c_ORG__</label>
                             <div><input name="ORG" type="text"></div>
                         </div>
-                        <div class="input-item"><label for="">备注</label>
+                        <div class="input-item"><label for="">__MSG_c_NOTE__</label>
                             <div><textarea name="NOTE" cols="30" rows="2"></textarea></div>
                         </div>
                     </form>
@@ -261,91 +68,95 @@
                             <div><input name="S" type="text"></div>
                         </div>
                         <div class="input-item">
-                            <label for="">加密方式</label>
+                            <label for="">__MSG_w_type__</label>
                             <div><select name="T" id="sel">
-                                <option value="nopass">无加密</option>
+                                <option value="nopass">__MSG_w_no__</option>
                                 <option value="WEP">WEP</option>
                                 <option value="WPA">WPA/WPA2</option>
                             </select>
                             </div>
                         </div>
-                        <div class="input-item"><label for="">密码</label>
+                        <div class="input-item"><label for="">__MSG_w_pwd__</label>
                             <div><input name="P" type="password" disabled="disabled"></div>
                         </div>
-                        <div class="input-item"><label for="">是否隐藏</label>
+                        <!-- <div class="input-item"><label for="">是否隐藏</label>
                             <div><input name="H" type="checkbox"></div>
-                        </div>
+                        </div> -->
                     </form>
                 </div>
                 <div class="section sms-section" data-tag="sms">
                     <form action="" id="frm_sms" class="input-wrap" name="SMS">
-                        <div class="input-item"><label for="">手机号码</label>
+                        <div class="input-item"><label for="">__MSG_s_number__</label>
                             <div><input name="Tel" type="text"></div>
                         </div>
-                        <div class="input-item"><label for="">短信内容</label>
+                        <div class="input-item"><label for="">__MSG_s_content__</label>
                             <div><textarea name="NOTE" cols="30" rows="2"></textarea></div>
                         </div>
                     </form>
                 </div>
                 <div class="section effect-section" data-tag="effect">
                     <form action="" id="frm_effect" class="input-wrap" name="EFFECT">
-                        <div class="input-item"><label for="">点样式</label>
+                        <div class="input-item"><label for="">__MSG_ef_point__</label>
                             <div>
-                                <input type="range" min="-50" max="50" step="1">
+                                <input type="range" value="0" id="point_range" min="-50" max="50" step="1">
                             </div>
                         </div>
-                        <div class="input-item"><label for="">颜色</label>
+                        <div class="input-item"><label for="">__MSG_ef_color__</label>
                             <div>
-                                <span>前景色</span>&nbsp;<input name="FgColor" type="color">
-                                <span>背景色</span>&nbsp;<input name="BgColor" value="#ffffff" type="color">
+                                <span>__MSG_ef_fg__</span>&nbsp;<input name="FgColor" id="fg_color" value="#000000" type="color">
+                                <span>__MSG_ef_bg__</span>&nbsp;<input name="BgColor" id="bg_color" value="#ffffff" type="color">
                             </div>
                         </div>
-                        <div class="input-item"><label for="">定位点色</label>
+                        <div class="input-item"><label for="">__MSG_ef_ptcolor__</label>
                             <div>
-                                <span>外框定位点</span>&nbsp;<input name="PtColor" type="color">
-                                <span>内点定位点</span>&nbsp;<input name="InPtColor" type="color">
+                                <span>__MSG_ef_pt__</span>&nbsp;<input name="PtColor" id="pt_color" value="#000000" type="color">
+                                <span>__MSG_ef_inpt__</span>&nbsp;<input name="InPtColor" id="inpt_color" value="#000000"
+                                    type="color">
                             </div>
                         </div>
-                        <div class="input-item"><label for="">渐变</label>
+                        <div class="input-item"><label for="">__MSG_ef_gc__</label>
                             <div>
-                                <span>渐变色</span>&nbsp;<input name="GcColor" type="color">
-                                <span>渐变方式</span>&nbsp;<select name="GcType" id="gc_type">
-                                    <option value="0" selected>无</option>
-                                    <option value="backslash">反斜线</option>
-                                    <option value="slash">斜线</option>
-                                    <option value="circular">圆形</option>
-                                    <option value="horizontal">水平</option>
-                                    <option value="vertical">垂直</option>
+                                <span>__MSG_ef_gccolor__</span>&nbsp;<input name="GcColor" id="gc_color" value="#000000"
+                                    type="color">
+                                <span>__MSG_ef_gctype__</span>&nbsp;<select name="GcType" id="gc_type" value="0">
+                                    <option value="0" selected>__MSG_ef_no__</option>
+                                    <option value="backslash">__MSG_ef_backslash__</option>
+                                    <option value="slash">__MSG_ef_slash__</option>
+                                    <option value="circular">__MSG_ef_circular__</option>
+                                    <option value="horizontal">__MSG_ef_horizontal__</option>
+                                    <option value="vertical">__MSG_ef_vertical__</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="input-item"><label for="">嵌入图标</label>
+                        <div class="input-item"><label for="">__MSG_ef_icontxt__</label>
                             <div>
-                                <input type="file" accept="image/*" /><br/>
-                                <span>嵌入方式</span>&nbsp;<select name="IconType" id="icon_type">
-                                    <option value="0" selected>无</option>
-                                    <option value="backslash">反斜线</option>
-                                    <option value="slash">斜线</option>
-                                    <option value="circular">圆形</option>
-                                    <option value="horizontal">水平</option>
-                                    <option value="vertical">垂直</option>
+                                <!-- <input type="file" id="icon" accept="image/*" /><br/> -->
+                                <div class="btn" id="choose">__MSG_ef_choose__</div>
+                                <span>__MSG_ef_icontype__</span>&nbsp;<select name="Logotype" id="icon_type">
+                                    <option value="default" selected>__MSG_ef_default__</option>
+                                    <option value="icon">__MSG_ef_icon__</option>
+                                    <option value="border">__MSG_ef_border__</option>
+                                    <option value="stroke">__MSG_ef_stroke__</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="input-item"><label for="">外边距</label>
+                        <div class="input-item"><label for="">__MSG_ef_size__</label>
                             <div>
-                                <input type="number" min="0" max="50" step="1">
+                                <span>__MSG_ef_width__</span>&nbsp;<input type="number" name="Width" value="300" id="s_width"
+                                    min="100" max="300" step="10">
+                                <span>__MSG_ef_margin__</span>&nbsp;<input type="number" name="Margin" value="10" id="s_margin"
+                                    min="0" max="50" step="1">
                             </div>
                         </div>
-                        <div class="input-item"><label for="">其它设置</label>
+                        <div class="input-item"><label for="">__MSG_ef_other__</label>
                             <div>
-                                <span>纠错等级</span>&nbsp;<select name="GcType" id="gc_type">
-                                    <option value="L" selected>最低</option>
-                                    <option value="M">低</option>
-                                    <option value="Q">中</option>
-                                    <option value="H">高</option>
+                                <span>__MSG_ef_level__</span>&nbsp;<select name="Level" id="level_type">
+                                    <option value="L" selected>__MSG_ef_L__</option>
+                                    <option value="M">__MSG_ef_M__</option>
+                                    <option value="Q">__MSG_ef_Q__</option>
+                                    <option value="H">__MSG_ef_H__</option>
                                 </select>
-                                <span>旋转</span>&nbsp;<select name="GcType" id="gc_type">
+                                <span>__MSG_ef_rotate__</span>&nbsp;<select name="Rotate" id="rotate_type">
                                     <option value="0">0</option>
                                     <option value="1">90°</option>
                                     <option value="2">180°</option>
@@ -358,15 +169,18 @@
             </div>
             <div class="qrcode">
                 <canvas id="canvas"></canvas>
-                <div class="btn" id="generator">生成</div>
+                <div class="btn" id="generator">__MSG_btn_generator__</div>
                 <!-- <div class="btn" id="clear">清除</div> -->
-                <div class="btn" id="save">保存</div>
+                <div class="btn" id="save">__MSG_btn_save__</div>
+                <!-- <a download="二维码.png" style="display:none;" id="btna"></a> -->
             </div>
         </div>
     </div>
     <script src="scripts/utils/qrcode.js"></script>
     <script src="scripts/utils/qrcanvas.js"></script>
     <script src="scripts/utils/index.js"></script>
+    <script src="scripts/init.js"></script>
+    <script src="scripts/parse.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 

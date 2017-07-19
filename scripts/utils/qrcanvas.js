@@ -581,7 +581,8 @@ function createQRImage(P, Q, X) {
             0 < a.length ? c(0) : b()
         },
         O = function(f, b) {
-            var c = f.target.files[0];
+            var c = f;
+            if(!c) return;
             if (c.type && !/image\/\w+/.test(c.type))
                 return alert("\u8bf7\u786e\u4fdd\u6587\u4ef6\u4e3a\u56fe\u50cf\u7c7b\u578b"), !1;
             var d = new FileReader;

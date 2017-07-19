@@ -1,0 +1,250 @@
+{
+    "app_name": {
+        "message": "二维码生成",
+        "description": ""
+    },
+    "app_description": {
+        "message": "可以离线使用的二维码生成器",
+        "description": ""
+    },
+    "menu_txt": {
+        "message": "文本",
+        "description": ""
+    },
+    "menu_tel": {
+        "message": "电话",
+        "description": ""
+    },
+    "menu_email": {
+        "message": "邮箱",
+        "description": ""
+    },
+    "menu_card": {
+        "message": "名片",
+        "description": ""
+    },
+    "menu_wifi": {
+        "message": "Wifi",
+        "description": ""
+    },
+    "menu_sms": {
+        "message": "短信",
+        "description": ""
+    },
+    "menu_effect": {
+        "message": "效果设置",
+        "description": ""
+    },
+    "p_txt": {
+        "message": "输入文本",
+        "description": ""
+    },
+    "p_tel": {
+        "message": "输入电话",
+        "description": ""
+    },
+    "p_email": {
+        "message": "输入邮箱",
+        "description": ""
+    },
+    "c_N": {
+        "message": "姓名",
+        "description": ""
+    },
+    "c_ADR": {
+        "message": "地址",
+        "description": ""
+    },
+    "c_TEL": {
+        "message": "电话",
+        "description": ""
+    },
+    "c_EMAIL": {
+        "message": "邮箱",
+        "description": ""
+    },
+    "c_URL": {
+        "message": "网址",
+        "description": ""
+    },
+    "c_ORG": {
+        "message": "单位",
+        "description": ""
+    },
+    "c_NOTE": {
+        "message": "备注",
+        "description": ""
+    },
+    "w_type": {
+        "message": "加密方式",
+        "description": ""
+    },
+    "w_no": {
+        "message": "无加密",
+        "description": ""
+    },
+    "w_pwd": {
+        "message": "密码",
+        "description": ""
+    },
+    "s_number": {
+        "message": "手机号码",
+        "description": ""
+    },
+    "s_content": {
+        "message": "短信内容",
+        "description": ""
+    },
+    "ef_point": {
+        "message": "点样式",
+        "description": ""
+    },
+    "ef_color": {
+        "message": "颜色",
+        "description": ""
+    },
+    "ef_fg": {
+        "message": "前景色",
+        "description": ""
+    },
+    "ef_bg": {
+        "message": "背景色",
+        "description": ""
+    },
+    "ef_ptcolor": {
+        "message": "定位点色",
+        "description": ""
+    },
+    "ef_pt": {
+        "message": "外框定位点",
+        "description": ""
+    },
+    "ef_inpt": {
+        "message": "内点定位点",
+        "description": ""
+    },
+    "ef_gc": {
+        "message": "渐变",
+        "description": ""
+    },
+    "ef_gccolor": {
+        "message": "渐变色",
+        "description": ""
+    },
+    "ef_gctype": {
+        "message": "渐变方式",
+        "description": ""
+    },
+    "ef_no": {
+        "message": "无",
+        "description": ""
+    },
+    "ef_backslash": {
+        "message": "反斜线",
+        "description": ""
+    },
+    "ef_slash": {
+        "message": "斜线",
+        "description": ""
+    },
+    "ef_circular": {
+        "message": "圆形",
+        "description": ""
+    },
+    "ef_horizontal": {
+        "message": "水平",
+        "description": ""
+    },
+    "ef_vertical": {
+        "message": "垂直",
+        "description": ""
+    },
+    "ef_icontxt": {
+        "message": "嵌入图标",
+        "description": ""
+    },
+    "ef_choose": {
+        "message": "选择图片",
+        "description": ""
+    },
+    "ef_icontype": {
+        "message": "嵌入方式",
+        "description": ""
+    },
+    "ef_default": {
+        "message": "原图",
+        "description": ""
+    },
+    "ef_icon": {
+        "message": "圆角",
+        "description": ""
+    },
+    "ef_border": {
+        "message": "白底",
+        "description": ""
+    },
+    "ef_stroke": {
+        "message": "描边",
+        "description": ""
+    },
+    "ef_size": {
+        "message": "尺寸",
+        "description": ""
+    },
+    "ef_width": {
+        "message": "宽度",
+        "description": ""
+    },
+    "ef_margin": {
+        "message": "外边距",
+        "description": ""
+    },
+    "ef_other": {
+        "message": "其它设置",
+        "description": ""
+    },
+    "ef_level": {
+        "message": "纠错等级",
+        "description": ""
+    },
+    "ef_L": {
+        "message": "最低",
+        "description": ""
+    },
+    "ef_M": {
+        "message": "低",
+        "description": ""
+    },
+    "ef_Q": {
+        "message": "中",
+        "description": ""
+    },
+    "ef_H": {
+        "message": "高",
+        "description": ""
+    },
+    "ef_rotate": {
+        "message": "旋转",
+        "description": ""
+    },
+    "btn_file": {
+        "message": "选择图片",
+        "description": ""
+    },
+    "btn_generator": {
+        "message": "生成",
+        "description": ""
+    },
+    "btn_clear": {
+        "message": "清除",
+        "description": ""
+    },
+    "btn_save": {
+        "message": "保存",
+        "description": ""
+    },
+    "filename": {
+        "message": "二维码.png",
+        "description": ""
+    }
+}

@@ -1,0 +1,198 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    line-height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.nav .a {
+    text-align: center;
+    padding: 1px 6px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #ff2200;
+}
+
+.nav .a:hover {
+    background-color: #eee;
+    color: #ff7e00;
+}
+
+.nav .a.active {
+    background-color: #e3e3e3;
+    color: #ff7e00;
+}
+
+.nav .a.effect {
+    color: #ff4400;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.main .main-content {
+    width: 580px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.main .main-content .section {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.main .main-content .section.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main .main-content .section input {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 2px 6px;
+}
+
+.input-wrap {}
+
+.input-wrap .input-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.input-wrap .input-item label {
+    display: block;
+    width: 160px;
+    text-align: right;
+    line-height: 30px;
+    margin-right: 10px;
+    color: #999;
+}
+
+.input-wrap .input-item label+div {
+    flex: 1;
+    display: block;
+    margin-right: 20px;
+    line-height: 30px;
+}
+
+.input-wrap .input-item input[type=checkbox] {
+    width: auto;
+    vertical-align: middle;
+}
+
+.input-wrap .input-item textarea,
+.input-wrap .input-item select {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 2px 6px;
+}
+
+.input-wrap .input-item select {
+    width: 140px;
+    height: 25px;
+}
+
+.input-wrap .input-item select option {
+    border: 0;
+}
+
+#frm_effect input[type=text],
+#frm_effect input[type=color],
+#frm_effect input[type=file] {
+    padding: 0;
+}
+
+#frm_effect input[type=range] {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+}
+
+#frm_effect input[type=number] {
+    width: 80px;
+}
+
+#frm_effect select {
+    width: 90px;
+}
+
+#frm_effect input[type=color] {
+    width: 40px;
+}
+
+.txt-section textarea {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.main .qrcode {
+    flex: 1;
+    margin-left: 10px;
+    max-width: 500px;
+}
+
+.main .qrcode canvas {
+    display: block;
+    max-width: 100%;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.main .qrcode .btn {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.main .qrcode .btn:hover {
+    box-shadow: 0 0 4px #ccc;
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px 9px;
+    color: #fff;
+    background-color: #ff6200;
+    border-radius: 2px;
+    cursor: pointer;
+    line-height: 18px;
+}
+
+.btn:hover {
+    background-color: #ff7e00;
+}

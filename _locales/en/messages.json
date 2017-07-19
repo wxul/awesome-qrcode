@@ -1,0 +1,250 @@
+{
+    "app_name": {
+        "message": "QRcode Generator",
+        "description": ""
+    },
+    "app_description": {
+        "message": "A simple QR code generator for offline use.",
+        "description": ""
+    },
+    "menu_txt": {
+        "message": "Text",
+        "description": ""
+    },
+    "menu_tel": {
+        "message": "Tel",
+        "description": ""
+    },
+    "menu_email": {
+        "message": "Email",
+        "description": ""
+    },
+    "menu_card": {
+        "message": "Contact",
+        "description": ""
+    },
+    "menu_wifi": {
+        "message": "Wifi",
+        "description": ""
+    },
+    "menu_sms": {
+        "message": "SMS",
+        "description": ""
+    },
+    "menu_effect": {
+        "message": "QR Style",
+        "description": ""
+    },
+    "p_txt": {
+        "message": "text or website URL",
+        "description": ""
+    },
+    "p_tel": {
+        "message": "I'm not good at English but I think you should understand",
+        "description": ""
+    },
+    "p_email": {
+        "message": "",
+        "description": ""
+    },
+    "c_N": {
+        "message": "Name",
+        "description": ""
+    },
+    "c_ADR": {
+        "message": "Address",
+        "description": ""
+    },
+    "c_TEL": {
+        "message": "Tel",
+        "description": ""
+    },
+    "c_EMAIL": {
+        "message": "Email",
+        "description": ""
+    },
+    "c_URL": {
+        "message": "URL",
+        "description": ""
+    },
+    "c_ORG": {
+        "message": "Organization",
+        "description": ""
+    },
+    "c_NOTE": {
+        "message": "Note",
+        "description": ""
+    },
+    "w_type": {
+        "message": "Encrypt type",
+        "description": ""
+    },
+    "w_no": {
+        "message": "None",
+        "description": ""
+    },
+    "w_pwd": {
+        "message": "Password",
+        "description": ""
+    },
+    "s_number": {
+        "message": "Telephone number",
+        "description": ""
+    },
+    "s_content": {
+        "message": "Message",
+        "description": ""
+    },
+    "ef_point": {
+        "message": "Point style",
+        "description": ""
+    },
+    "ef_color": {
+        "message": "Color",
+        "description": ""
+    },
+    "ef_fg": {
+        "message": "Foreground color",
+        "description": ""
+    },
+    "ef_bg": {
+        "message": "Background color",
+        "description": ""
+    },
+    "ef_ptcolor": {
+        "message": "Position Detection Pattern",
+        "description": ""
+    },
+    "ef_pt": {
+        "message": "Pattern border color",
+        "description": ""
+    },
+    "ef_inpt": {
+        "message": "Pattern color",
+        "description": ""
+    },
+    "ef_gc": {
+        "message": "Gradual change",
+        "description": ""
+    },
+    "ef_gccolor": {
+        "message": "Gradient color",
+        "description": ""
+    },
+    "ef_gctype": {
+        "message": "Gradient type",
+        "description": ""
+    },
+    "ef_no": {
+        "message": "None",
+        "description": ""
+    },
+    "ef_backslash": {
+        "message": "Backslash",
+        "description": ""
+    },
+    "ef_slash": {
+        "message": "Slash",
+        "description": ""
+    },
+    "ef_circular": {
+        "message": "Circular",
+        "description": ""
+    },
+    "ef_horizontal": {
+        "message": "Horizontal",
+        "description": ""
+    },
+    "ef_vertical": {
+        "message": "Vertical",
+        "description": ""
+    },
+    "ef_icontxt": {
+        "message": "Logo",
+        "description": ""
+    },
+    "ef_choose": {
+        "message": "Choose",
+        "description": ""
+    },
+    "ef_icontype": {
+        "message": "Type",
+        "description": ""
+    },
+    "ef_default": {
+        "message": "None",
+        "description": ""
+    },
+    "ef_icon": {
+        "message": "Icon",
+        "description": ""
+    },
+    "ef_border": {
+        "message": "Border",
+        "description": ""
+    },
+    "ef_stroke": {
+        "message": "Stroke",
+        "description": ""
+    },
+    "ef_size": {
+        "message": "Size",
+        "description": ""
+    },
+    "ef_width": {
+        "message": "Width",
+        "description": ""
+    },
+    "ef_margin": {
+        "message": "Margin",
+        "description": ""
+    },
+    "ef_other": {
+        "message": "Other settings",
+        "description": ""
+    },
+    "ef_level": {
+        "message": "Level",
+        "description": ""
+    },
+    "ef_L": {
+        "message": "L",
+        "description": ""
+    },
+    "ef_M": {
+        "message": "M",
+        "description": ""
+    },
+    "ef_Q": {
+        "message": "Q",
+        "description": ""
+    },
+    "ef_H": {
+        "message": "H",
+        "description": ""
+    },
+    "ef_rotate": {
+        "message": "Rotate",
+        "description": ""
+    },
+    "btn_file": {
+        "message": "Choose",
+        "description": ""
+    },
+    "btn_generator": {
+        "message": "Generate",
+        "description": ""
+    },
+    "btn_clear": {
+        "message": "Clear",
+        "description": ""
+    },
+    "btn_save": {
+        "message": "Save",
+        "description": ""
+    },
+    "filename": {
+        "message": "image.png",
+        "description": ""
+    }
+}
